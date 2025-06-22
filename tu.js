@@ -12,7 +12,7 @@ document.querySelector("#btnPerroNombre").addEventListener("click", IngresarPerr
 
 
 function IngresarPerro(){
-    let perro =  document.querySelector("#txtPerroNombre").value.toLowerCase()
+    let perro =  document.querySelector("#txtPerroNombre").value.toLowerCase().trim()
 
     if( perro == "oplur"){
           document.querySelector("#pantallaAravenaTrue").style.display = "none"
@@ -60,7 +60,7 @@ function IngresarNombre(){
 }
 
 function continuarProximo2(){
-    let inicial =  document.querySelector("#txtApellido").value.toLowerCase()
+    let inicial =  document.querySelector("#txtApellido").value.toLowerCase().trim()
 
     if(inicial == "a"){
  document.querySelector("#pantallaApellido").style.display = "none"
