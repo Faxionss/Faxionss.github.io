@@ -46,7 +46,8 @@ function continuarProximo(){
 }
 
 function IngresarNombre(){
-    let nombre = document.querySelector("#txtNombre").value.toLowerCase()
+    let nombre = document.querySelector("#txtNombre").value.toLowerCase().trim()
+
 
     if(nombre == "alexander"){
              document.querySelector("#pantallaBienvenido").style.display = "none"
