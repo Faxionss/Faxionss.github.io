@@ -1,0 +1,137 @@
+/* === ESTILO GENERAL === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #fffdfc, #ffe9f3);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* === SECCIONES Y CONTENEDORES === */
+section, div {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffffcc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* === TÍTULOS === */
+h1, h2 {
+    color: #b8005d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* === PÁRRAFOS === */
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+/* === INPUTS, BOTONES Y SELECT === */
+input[type="text"],
+input[type="button"],
+select {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    background-color:  #b8005d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #ff80aa;
+}
+
+p{
+    text-align: center;
+}
+
+/* === LINKS === */
+a {
+    display: block;
+    text-align: center;
+    background-color: #b8005d;
+    color: white;
+    padding: 12px 20px;
+    margin: 20px auto;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #d91e78;
+}
+
+/* === GIFS === */
+img[src$=".gif"] {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* === GALERÍA DE IMÁGENES (AJUSTE RESPONSIVE) === */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+/* === RESPONSIVE EXTRAS === */
+@media screen and (max-width: 600px) {
+    section, div {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="button"],
+    select {
+        width: 95%;
+        font-size: 15px;
+    }
+}
+
